@@ -17,6 +17,8 @@ import luaSvg from '$lib/assets/lua.svg';
 
 import Tag from '$lib/elements/Tag.svelte';
 import Page from '$lib/elements/Page.svelte';
+import UniCard from '$lib/elements/UniCard.svelte';
+import Icon from '$lib/elements/Icon.svelte';
 </script>
 
 
@@ -27,13 +29,11 @@ import Page from '$lib/elements/Page.svelte';
 
     <div slot="contents" class="project-grid">
 
-        <Card git="https://github.com/Voldari/VibiasMarket">
-            <span slot="title">Vibia's Market</span>
-            <img src={gh} alt="gh" slot="subtitle">
-            
-            <span slot="body">Create a virtual bazar for you and your friends to trade whatever goods you can think of. Created for my own use running TTRPG games this tool is great for anyone looking to simulate a market. Currently a WIP</span>
-
-            <div slot="foot" class="tags">
+        <UniCard>
+            <svelte:fragment slot="title">Vibia's Market</svelte:fragment>
+            <Icon slot="subtitle" link="https://github.com/Voldari/VibiasMarket" img={gh}></Icon>
+            <svelte:fragment slot="summary">Create a virtual bazar for you and your friends to trade whatever goods you can think of. Created for my own use running TTRPG games this tool is great for anyone looking to simulate a market. Currently a WIP</svelte:fragment>
+            <svelte:fragment slot="footer">
                 <Tag href="https://svelte.dev/">
                     <img src={svelteSvg} alt="svelte" slot="image">
                     <span slot="tagName">Svelte</span>
@@ -42,14 +42,13 @@ import Page from '$lib/elements/Page.svelte';
                     <img src={supabaseSvg} alt="supabase" slot="image">
                     <span slot="tagName">Supabase</span>
                 </Tag>
-            </div>
-        </Card>
-
-        <Card git="https://github.com/Voldari/corner-store">
-            <span slot="title">Corner Store</span>
-            <img src={gh} alt="gh"  slot="subtitle">
-            <span slot="body">Track what you have in your fridge and all the various possible recipe combinations you can make. Put items you need on the shopping list and save your favorite recipes for later.</span>
-            <div slot="foot" class="tags">
+            </svelte:fragment>
+        </UniCard>
+        <UniCard>
+            <svelte:fragment slot="title">Corner Store</svelte:fragment>
+            <Icon slot="subtitle" link="https://github.com/Voldari/corner-store" img={gh}></Icon>
+            <svelte:fragment slot="summary">Track what you have in your fridge and all the various possible recipe combinations you can make. Put items you need on the shopping list and save your favorite recipes for later.</svelte:fragment>
+            <svelte:fragment slot="footer">
                 <Tag href="https://developer.android.com/studio">
                     <img src={androidstudioSvg} alt="androidstudio" slot="image">
                     <span slot="tagName">AndroidStudio</span>
@@ -62,26 +61,24 @@ import Page from '$lib/elements/Page.svelte';
                     <img src={kotlinSvg} alt="kotlin" slot="image">
                     <span slot="tagName">Kotlin</span>
                 </Tag>
-            </div>
-        </Card>
-
-        <Card git="https://github.com/Voldari/juno">
-            <span slot="title">JUNO</span>
-            <img src={gh} alt="gh" slot="subtitle">
-            <span slot="body">Custom written firmware for the Kyria. My first introduction to C and a fun challenge to work on.</span>
-            <div slot="foot" class="tags">
+            </svelte:fragment>
+        </UniCard>
+        <UniCard>
+            <svelte:fragment slot="title">JUNO</svelte:fragment>
+            <Icon slot="subtitle" link="https://github.com/Voldari/juno" img={gh}></Icon>
+            <svelte:fragment slot="summary">Custom written firmware for the Kyria. My first introduction to C and a fun challenge to work on.</svelte:fragment>
+            <svelte:fragment slot="footer">
                 <Tag href="https://en.wikipedia.org/wiki/C_(programming_language)">
                     <img src={cSvg} alt="c" slot="image">
                     <span slot="tagName">C</span>
                 </Tag>
-            </div>
-        </Card>
-
-        <Card git="https://github.com/Voldari/chicken-game">
-            <span slot="title">Chicken Game</span>
-            <img src={gh} alt="gh" slot="subtitle">
-            <span slot="body">Raise chickens in the fertile ground of a abandoned dye factory. Still a work in progress this is my first experience with the LoVE2D engine. Currently a WIP</span>
-            <div slot="foot" class="tags">
+            </svelte:fragment>
+        </UniCard>
+        <UniCard>
+            <svelte:fragment slot="title">Chicken Game</svelte:fragment>
+            <Icon slot="subtitle" link="https://github.com/Voldari/chicken-game" img={gh}></Icon>
+            <svelte:fragment slot="summary">Raise chickens in the fertile ground of a abandoned dye factory. Still a work in progress this is my first experience with the LoVE2D engine. Currently a WIP</svelte:fragment>
+            <svelte:fragment slot="footer">
                 <Tag href="https://love2d.org/">
                     <img src={loveSvg} alt="love" slot="image">
                     <span slot="tagName">LÖVE2D</span>
@@ -90,32 +87,35 @@ import Page from '$lib/elements/Page.svelte';
                     <img src={luaSvg} alt="lua" slot="image">
                     <span slot="tagName">Lua</span>
                 </Tag>
-            </div>
-        </Card>
-
+            </svelte:fragment>
+        </UniCard>
     </div>
 </Page>
 
 <style>
-.project-grid {
-    height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
+    .project-grid {
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
 
-    gap: var(--spacing-small);
+        gap: var(--spacing-small);
 
-}   
-    img {
-        height: var(--font-subtitle);
-    }
+    }   
+
 
     .tags {
         display: flex;
         gap: var(--spacing-small);
+    }
+
+    .wha {
+        z-index: 999;
+        height: var(--font-subtitle);
+        border: solid;
     }
 
 </style>

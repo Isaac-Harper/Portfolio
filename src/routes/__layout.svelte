@@ -15,38 +15,10 @@ import '/node_modules/modern-normalize/modern-normalize.css';
 }
 
 /* fonts */
-@font-face {
-    font-family: Junction;
-    src: url('/src/fonts/junction-regular.woff'),
-        url('/src/fonts/junction-regular.ttf')
-}
-
-@font-face {
-    font-family: Oswald;
-    src: url('/src/fonts/Oswald/Oswald-VariableFont_wght.ttf');
-}
-
-@font-face {
-    font-family: Arvo;
-    src: url('/src/fonts/Arvo/Arvo/Arvo-Regular.ttf');
-}
-
-@font-face {
-    font-family: Recursive;
-    src: url('/src/fonts/Recursive_VF_1.084.woff2');
-}
-
-@font-face {
-    font-family: Junction-bold;
-    src: url('/src/fonts/junction-bold.woff'),
-        url('/src/fonts/junction-bold.ttf')
-}
-
-@font-face {
-    font-family: Junction-light;
-    src: url('/src/fonts/junction-light.woff'),
-        url('/src/fonts/junction-light.ttf')
-}
+    @font-face {
+        font-family: Recursive;
+        src: url('/src/fonts/Recursive_VF_1.084.woff2');
+    }
 
 :root {
     /* Colors defined */
@@ -156,6 +128,7 @@ import '/node_modules/modern-normalize/modern-normalize.css';
 .container {
     margin: var(--vu-4);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 </style>

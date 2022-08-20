@@ -26,9 +26,7 @@
 
 <style>
     .card {
-        padding: var(--spacing-small);
         width: 100%;
-        
         position: relative;
     }
 
@@ -74,9 +72,9 @@
         grid-template-columns: 1fr auto;
         grid-template-rows: var(--font-subtitle);
         
-        gap: var(--spacing-small);
+        gap: var(--vu-2);
         height: 100%;
-        padding: var(--spacing-small);
+        margin: var(--vu-2);
 
 
     }

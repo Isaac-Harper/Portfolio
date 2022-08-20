@@ -1,5 +1,6 @@
 <script>
-	import Page from './../lib/elements/Page.svelte';
+	import UniCard from '$lib/elements/UniCard.svelte';
+import Page from './../lib/elements/Page.svelte';
 </script>
 
 

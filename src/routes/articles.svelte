@@ -1,9 +1,11 @@
 <script>
+
     import { articleSummary, loadArticle } from "$lib/db";
     let summary = articleSummary();
 
     import Articlecard from "$lib/elements/Articlecard.svelte";
     import Page from "$lib/elements/Page.svelte";
+    import UniCard from "$lib/elements/UniCard.svelte";
 
 let svelteSvg = "svelte.svg"
 </script>
@@ -16,15 +18,15 @@ let svelteSvg = "svelte.svg"
     <div slot="contents" class="project-grid">
         {#await summary then summary}
             {#each summary as article}
-                <Articlecard>
+                <UniCard>
                     <a href="/articles/{article.slug}" slot="title">{article.title} </a>
-                    <span slot="body">{article.intro}</span>
-                    <span slot="foot"></span>
-                </Articlecard>
+                    <span slot="summary">{article.intro}</span>
+                </UniCard>
             {/each}
         {/await}
     </div>
 </Page>
+
 
 <style>
 .project-grid {
