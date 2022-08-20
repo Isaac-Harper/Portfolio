@@ -1,38 +1,13 @@
-# create-svelte
+# Portfolio 
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is my portfolio, if you want to know about it check it out at IsaacHarper.dev
 
-## Creating a project
+If you want to check out the code heres a quick map of where you can find the important pieces.
 
-If you're seeing this, you've probably already done this step. Congrats!
+src/lib/elements contains all the components of the site
+src/lib/db.js is the database manager in charge of fetching articles
+src/lib/routes contains all the pages of the site
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+# Building
+If you want to build yourself a copy of this feel free to. Its a sveltekit project, just npm install and you're good to go.

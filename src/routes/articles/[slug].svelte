@@ -4,7 +4,7 @@
     const slug = $page.params.slug;
     let article = loadArticle(slug);
     import BackButton from "$lib/elements/BackButton.svelte";
-import Page from '$lib/elements/Page.svelte';
+    import Page from '$lib/elements/Page.svelte';
 </script>
 
 
