@@ -3,9 +3,9 @@
         <h1>
             <slot name="title">Title</slot>
         </h1>
-        <div class="intro">
+        <p class="intro">
             <slot name="intro">Intro</slot>
-        </div>
+        </p>
         <hr>
         <div class="contents">
             <slot name="contents">content</slot>
@@ -18,7 +18,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            line-height: normal;
+            line-height: 1.3;
             
             color: var(--font-color);
             font-size: var(--font-text);

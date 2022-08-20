@@ -7,6 +7,9 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 
 
+/**
+ * @param {string} articleTitle
+ */
 async function loadArticle(articleTitle) {
     let { data, error } = await supabase
             .from('Articles')

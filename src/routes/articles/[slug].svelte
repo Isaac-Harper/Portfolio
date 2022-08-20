@@ -54,5 +54,6 @@ p {
 .container {
     padding: var(--spacing-medium);
     max-width: 100rem;
+    line-height: 1.3;
 }
 </style>

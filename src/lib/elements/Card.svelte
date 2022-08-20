@@ -1,5 +1,8 @@
 <script>
-    export let git;
+    export /**
+* @type {string | null | undefined}
+*/
+     let git;
 </script>
 
 <div class="card">
@@ -11,7 +14,7 @@
         </h2>
         
         <a class="subtitle" href={git}>
-            <slot name="subtitle"/>
+            <slot class="img" name="subtitle"/>
         </a>
         <p class="body">
             <slot name="body">
@@ -27,10 +30,15 @@
 
 <style>
 .card {
-    padding: var(--spacing-small);
+    padding: var(--vu-4);
     width: 100%;
 
     position: relative;
+
+
+    text-decoration: none;
+
+    color: black;
 }
 
 .card::before {
@@ -65,6 +73,7 @@
     top: 80%;
 }
 
+
 .grid {
     display: grid;
     grid-template-areas:
@@ -72,7 +81,7 @@
         "body body"
         "foot foot";
     grid-template-columns: 1fr auto;
-    grid-template-rows: var(--font-subtitle);
+    grid-template-rows: 1fr auto;
 
 
     z-index: 999;
@@ -96,7 +105,7 @@
     }
 
 .subtitle {
-    font-size: var(--font-text);
+    font-size: var(--font-subtitle);
     grid-area: subtitle;
     margin: 0;
 }

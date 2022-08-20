@@ -109,7 +109,10 @@ import Page from '$lib/elements/Page.svelte';
 
     gap: var(--spacing-small);
 
-}
+}   
+    img {
+        height: var(--font-subtitle);
+    }
 
     .tags {
         display: flex;

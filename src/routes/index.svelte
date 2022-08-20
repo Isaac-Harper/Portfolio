@@ -12,7 +12,7 @@
 
     <div slot="contents">
         <h2>About Me</h2>
-        <p>I'm Isaac (He/Him). I am a <span class="highlight">22</span> year old Arizonan who is interested in a lot of things.  A couple of the things I'm interested in that may be featured on this site include web development, hobby electronics, worldbuilding, CAD, coffee brewing, video games, backpacking, and fishing. </p>
+        <p>I'm Isaac (He/Him/They). I am a <span class="highlight">22</span> year old Arizonan who is interested in a lot of things.  A couple of the things I'm interested in that may be featured on this site include web development, hobby electronics, worldbuilding, CAD, coffee brewing, video games, backpacking, and fishing. </p>
 
         <p>Take a look around to see the new stuff I've been up to. Also feel free to get in touch at <span class="highlight">IsaacHarperDev@gmail.com</span> and check out the other places I'm at below</p>
     </div>
