@@ -6,7 +6,6 @@ import {
 </script>
 
 <div class="container">
-
     <div class="header">
         <Navlink link="/" selected={$page.url.pathname === '/'} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l) --font-color=var(--white)>Home</Navlink>
     </div>

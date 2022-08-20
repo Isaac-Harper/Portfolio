@@ -1,6 +1,5 @@
 <script>
 import Card from '$lib/elements/Card.svelte';
-import Main from '$lib/blocks/Main.svelte';
 
 import gh from '$lib/assets/github.svg';
 

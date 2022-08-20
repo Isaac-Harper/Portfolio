@@ -27,6 +27,7 @@ export let link = "/";
 
     height: var(--font-subtitle);
     font-size: var(--font-subtitle);
+    font-family: var(--normal-font);
     text-decoration: none;
     color: var(--font-color);
     border: none;

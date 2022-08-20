@@ -1,22 +1,21 @@
 <script>
-import Main from "$lib/blocks/Main.svelte";
-import Page from "$lib/elements/Page.svelte";
+    import Page from "$lib/elements/Page.svelte";
 </script>
 
 <Page>
     <span slot="title">Uses</span>
     <span slot="intro">A collection of the things I use to do what I do. Inspired by <a href="https://uses.tech">uses.tech</a></span>
 
-    <div slot="contents" class="body">
+    <div slot="contents">
 
-        <h3>Design and Dev tools</h3>
+        <h2>Design and Dev tools</h2>
         <ul>
             <li>VSCode</li>
             <li>Alacritty</li>
             <li>zsh</li>
             <li>zim</li>
         </ul>
-        <h3>Computer</h3>
+        <h2>Computer</h2>
         <ul>
             <li>i9 desktop</li>
             <li>Arch Linux</li>
@@ -24,16 +23,16 @@ import Page from "$lib/elements/Page.svelte";
             <li>OSX</li>
             <li>wacom drawing tablet</li>
         </ul>
-        <h3>Keyboard</h3>
+        <h2>Keyboard</h2>
         <ul>
             <li>Kyria self made kb</li>
         </ul>
-        <h3>Pockets</h3>
+        <h2>Pockets</h2>
         <ul>
             <li>airpods</li>
             <li>iPhone</li>
         </ul>
-        <h3>Desk</h3>
+        <h2>Desk</h2>
         <ul>
             <li>NerdDesk standing desk</li>
             <li>Comfy orange chair</li>
@@ -42,23 +41,13 @@ import Page from "$lib/elements/Page.svelte";
 </Page>
 
 <style>
-.body {
-
-    display: flex;
-    flex-direction: column;
-}
-
-h3 {
-    font-size: var(--font-subtitle);
-}
-
 ul {
-    margin-bottom: var(--spacing-small);
+    margin-bottom: var(--vu-1);
     list-style: disc in;
 }
 
 li {
     font-size: var(--font-text);
-    margin-left: var(--spacing-medium);
+    margin-left: var(--vu-4);
 }
 </style>

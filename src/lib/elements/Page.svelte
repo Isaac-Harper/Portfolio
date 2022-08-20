@@ -24,19 +24,9 @@
             font-size: var(--font-text);
             font-family: var(--normal-font);
         }
-    
-        h1 {
-            font-size: var(--font-mega);
-            font-family: var(--bold-font);
-            margin-bottom: var(--vu-1);
-        }
 
         .contents {
             margin: var(--vu-4);
-        }
-
-        .intro {
-            margin-bottom: var(--vu-1);
         }
     </style>
     
