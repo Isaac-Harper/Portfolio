@@ -18,8 +18,8 @@ import {
 <style>
 .container {
     display: flex;
-    gap: var(--spacing-large);
-    padding: var(--spacing-medium);
+    gap: var(--vu-4);
+    padding: var(--vu-4);
 
     background-color: var(--black);
     z-index: -1;
