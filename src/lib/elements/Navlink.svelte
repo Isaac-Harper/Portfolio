@@ -12,17 +12,15 @@ export let selected = false;
 export let link = "/";
 </script>
 
-<div class="button" class:selected>
-    <a href={link}  >
-        <slot>button</slot>
-    </a>
+<a href={link} class="button" class:selected>
+    <slot>button</slot>
     <div class="box"/>
-</div>
+</a>
 
 <style>
 .button {
-    --box-height: 60%;
-    --box-width: 100%;
+    --box-height: 80%;
+    --box-width: 110%;
     --color: hsl(var(--h, 245), var(--s, 91%), calc(var(--l, 88%) * 0.9));
 
     height: var(--font-subtitle);
@@ -42,7 +40,7 @@ export let link = "/";
 
 .button:hover {
     --box-height: 30%;
-    --box-width: 110%;
+    --box-width: 120%;
     --color: hsl(var(--h, 245), var(--s, 91%), calc(var(--l, 88%) * 1));
 }
 
@@ -52,12 +50,12 @@ export let link = "/";
 }
 
 .button:focus-visible {
-    --box-height: 60%;
+    --box-height: 40%;
 }
 
 .selected {
     --box-height: 20%;
-    --box-width: 120%;
+    --box-width: 115%;
 }
 
 

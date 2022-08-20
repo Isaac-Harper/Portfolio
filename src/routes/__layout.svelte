@@ -47,9 +47,9 @@ import '/node_modules/modern-normalize/modern-normalize.css';
         --blue-l: 40%;
         --blue: hsl(var(--blue-h), var(--blue-s), var(--blue-l));
 
-        --green-h: 76;
-        --green-s: 11%;
-        --green-l: 58%;
+        --green-h: 156;
+        --green-s: 23%;
+        --green-l: 34%;
         --green: hsl(var(--green-h), var(--green-s), var(--green-l));
 
         /* Color uses defined */
