@@ -122,7 +122,7 @@ import '/node_modules/modern-normalize/modern-normalize.css';
     :global(p) {
         font-variation-settings: var(--wght-normal);
         font-size: var(--font-text);
-        margin: 0 0 var(--vu-1);
+        margin: 0 0 var(--vu-2);
     }
 
 .container {

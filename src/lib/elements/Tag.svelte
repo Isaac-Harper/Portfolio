@@ -1,5 +1,8 @@
 <script>
-export let href;
+export /**
+* @type {string | null | undefined}
+*/
+ let href;
 </script>
 
 <a {href}>
