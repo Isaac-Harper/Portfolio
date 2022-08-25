@@ -107,15 +107,4 @@ import Icon from '$lib/elements/Icon.svelte';
     }   
 
 
-    .tags {
-        display: flex;
-        gap: var(--spacing-small);
-    }
-
-    .wha {
-        z-index: 999;
-        height: var(--font-subtitle);
-        border: solid;
-    }
-
 </style>
