@@ -13,11 +13,16 @@ export let link = "/";
 </script>
 
 <a href={link} class="button" class:selected>
-    <slot>button</slot>
     <div class="box"/>
+    <slot>button</slot>
 </a>
 
 <style>
+
+slot {
+    z-index: 2;
+}
+
 .button {
     --box-height: 80%;
     --box-width: 110%;
@@ -31,10 +36,8 @@ export let link = "/";
     border: none;
     position: relative;
     line-height: 1;
-    z-index: 2;
+
 }
-
-
 
 
 
