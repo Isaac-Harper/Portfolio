@@ -1,7 +1,7 @@
 <script>
 	import UniCard from '$lib/elements/UniCard.svelte';
     import Page from './../lib/elements/Page.svelte';
-    import portrait from 'portrait.jpg'
+    import portrait from '/images/portrait.jpg'
 
     const now = new Date();
     const birthday = new Date(99, 11, 13)
