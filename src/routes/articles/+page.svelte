@@ -1,7 +1,7 @@
 <script>
 
     import { articleSummary, loadArticle } from "$lib/db";
-    let summary2 = articleSummary();
+
 
     import Articlecard from "$lib/elements/Articlecard.svelte";
     import Page from "$lib/elements/Page.svelte";
