@@ -18,8 +18,20 @@
 	        analyticsId
 	    })
 	}
+	
+	const title = "Isaac's Portfolio"
+	const description = "Portfolio written in SvelteKit and hosted on Vercel"
 
 </script>
+
+
+<svelte:head>
+	<title>{title}</title>
+	<meta name="title" content={title} />
+	<meta name="description" content={description} />
+</svelte:head>
+
+
 
 <Header/>
 <div class="container">
