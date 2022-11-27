@@ -48,6 +48,7 @@
     @font-face {
         font-family: Recursive;
         src: url('/src/fonts/Recursive_VF_1.084.woff2');
+        font-display: swap;
     }
 
 :root {
