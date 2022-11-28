@@ -8,7 +8,7 @@
 		initialize({ cloud_name: 'dn0dhuunu' })
 	}
 	
-	let portrait = 'portrait.jpg'
+	let portrait = 'portrait'
     let portrait2 = '/images/portrait.jpg'
 
     const now = new Date();
