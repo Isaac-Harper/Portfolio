@@ -3,7 +3,7 @@
     import Page from './../lib/elements/Page.svelte';
 	
 
-    let portrait = '/images/portrait2.webp'
+    let portrait = '/images/portrait3.webp'
 
     const now = new Date();
     const birthday = new Date(99, 11, 13)
