@@ -5,7 +5,7 @@
 	import { browser } from '$app/env';
   	import { page } from '$app/stores';
 
-    import { inject } from '@vercel/analytics'
+    import { inject } from '@vercel/analytics';
 
     inject()
 
