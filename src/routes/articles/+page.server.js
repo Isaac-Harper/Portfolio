@@ -1,11 +1,11 @@
-import { articleSummary } from "$lib/db"
+
 
 export async function load() {
     
     const data = [
         {
             title: "First look at a 1962 pacer trailer",
-            intro: "My partner Izzy recently bought a 1962 Pack camper trailer that we are intending to fix up and eventually make our part time home as we travel the countr. This article documents the initial state of the camper and what our goals for this project.",
+            intro: "My partner Izzy recently bought a 1962 Pack camper trailer that we are intending to fix up and eventually make our part time home as we travel the county. This article documents the initial state of the camper and what our goals for this project.",
             slug: "trailer-1",
       },
       {

@@ -5,7 +5,7 @@
 	import { browser } from '$app/env';
   	import { page } from '$app/stores';
 
-    import { inject } from '@vercel/analytics'
+    import { inject } from '@vercel/analytics';
 
     inject()
 
@@ -18,8 +18,20 @@
 	        analyticsId
 	    })
 	}
+	
+	const title = "Isaac's Portfolio"
+	const description = "Portfolio written in SvelteKit and hosted on Vercel"
 
 </script>
+
+
+<svelte:head>
+	<title>{title}</title>
+	<meta name="title" content={title} />
+	<meta name="description" content={description} />
+</svelte:head>
+
+
 
 <Header/>
 <div class="container">
@@ -36,6 +48,7 @@
     @font-face {
         font-family: Recursive;
         src: url('/src/fonts/Recursive_VF_1.084.woff2');
+        font-display: swap;
     }
 
 :root {

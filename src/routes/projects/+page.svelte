@@ -31,7 +31,7 @@ import Icon from '$lib/elements/Icon.svelte';
 
         <UniCard>
             <svelte:fragment slot="title">Vibia's Market</svelte:fragment>
-            <Icon slot="subtitle" link="https://github.com/Voldari/VibiasMarket" img={gh}></Icon>
+            <Icon slot="subtitle" link="https://github.com/Voldari/vibias-market" img={gh}></Icon>
             <svelte:fragment slot="summary">Create a virtual bazar for you and your friends to trade whatever goods you can think of. Created for my own use running TTRPG games this tool is great for anyone looking to simulate a market. Currently a WIP</svelte:fragment>
             <svelte:fragment slot="footer">
                 <Tag href="https://svelte.dev/">
