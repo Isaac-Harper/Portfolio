@@ -19,8 +19,8 @@
 	    })
 	}
 	
-	const title = "Isaac's Portfolio"
-	const description = "Portfolio written in SvelteKit and hosted on Vercel"
+	const title = "Isaac Harper • Web App Developer • Portfolio"
+	const description = "Isaac Harper's portfolio written in SvelteKit and hosted on Vercel, "
 
 </script>
 
