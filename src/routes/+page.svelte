@@ -4,9 +4,8 @@
 	
 	import { image, initialize } from 'svelte-cloudinary'
 	import { browser } from '$app/env'
-	if (browser) { 
-		initialize({ cloud_name: 'dn0dhuunu' })
-	}
+	
+	initialize({ cloud_name: 'dn0dhuunu' })
 	
 	let portrait = 'portrait'
     let portrait2 = '/images/portrait.jpg'
