@@ -1,7 +1,12 @@
 <script>
 	import UniCard from '$lib/elements/UniCard.svelte';
     import Page from './../lib/elements/Page.svelte';
-    let portrait = '/images/portrait.jpg'
+	
+	import { image, initialize } from 'svelte-cloudinary'
+	initialize({ cloud_name: 'dn0dhuunu' })
+	
+	let portrait = 'https://res.cloudinary.com/dn0dhuunu/image/upload/v1669593270/portrait.jpg'
+    let portrait2 = '/images/portrait.jpg'
 
     const now = new Date();
     const birthday = new Date(99, 11, 13)
@@ -18,7 +23,7 @@
 
     <svelte:fragment slot="contents">
         <h2 class="highlight">About Me</h2>
-        <img src={portrait} alt="Me at Hardrians Tomb" >
+        <img use:image={{ portrait, bind: true, lazy: true}} alt="Portait"  class="img"/>
         <p>I'm Isaac (He/Him/They). I am a <span class="highlight" title={string}>22</span> year old Arizonan who is interested in a lot of things.  A couple of the things I'm interested in that may be featured on this site include web development, hobby electronics, worldbuilding, CAD, coffee brewing, video games, backpacking, and fishing. </p>
 
         <p>Take a look around to see the new stuff I've been up to. Also feel free to get in touch at <a href="mailto:isaacharperdev@gmail.com" class="highlight">IsaacHarperDev@gmail.com</a></p>
@@ -35,6 +40,7 @@
 
     img {
         max-width: 100%;
+		object-fit: cover;
         border-radius: var(--vu-4);
         margin-bottom: var(--vu-1);
     }
