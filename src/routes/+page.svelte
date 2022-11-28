@@ -7,7 +7,7 @@
 	
 	initialize({ cloud_name: 'dn0dhuunu' })
 	
-	const src = 'portrait'
+	const src = 'https://asset.cloudinary.com/dn0dhuunu/88ec3c1eb9aa6231b04d6e1e685db492'
     let portrait2 = '/images/portrait.jpg'
 
     const now = new Date();
