@@ -43,7 +43,7 @@
     img {
 
 		height: 100%;
-		object-fit: contain;
+		object-fit: fill;
         border-radius: var(--vu-4);
         margin-bottom: var(--vu-1);
     }
