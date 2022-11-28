@@ -3,7 +3,10 @@
     import Page from './../lib/elements/Page.svelte';
 	
 	import { image, initialize } from 'svelte-cloudinary'
-	initialize({ cloud_name: 'dn0dhuunu' })
+	import { browser } from '$app/env'
+	if (browser) { 
+		initialize({ cloud_name: 'dn0dhuunu' })
+	}
 	
 	let portrait = 'https://res.cloudinary.com/dn0dhuunu/image/upload/v1669593270/portrait.jpg'
     let portrait2 = '/images/portrait.jpg'
