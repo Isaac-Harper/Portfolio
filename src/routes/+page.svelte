@@ -36,6 +36,7 @@
     }
 
     img {
+        max-width: 100%;
         border-radius: var(--vu-4);
         margin-bottom: var(--vu-1);
     }
