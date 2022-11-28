@@ -2,13 +2,13 @@
 	import UniCard from '$lib/elements/UniCard.svelte';
     import Page from './../lib/elements/Page.svelte';
 	
-	import { image, initialize } from 'svelte-cloudinary';
+	import { image, initialize } from 'svelte-cloudinary'
 	import { browser } from '$app/env'
 	if (browser) { 
 		initialize({ cloud_name: 'dn0dhuunu' })
 	}
 	
-	let portrait = 'https://res.cloudinary.com/dn0dhuunu/image/upload/v1669593270/portrait.jpg'
+	let portrait = 'portrait.jpg'
     let portrait2 = '/images/portrait.jpg'
 
     const now = new Date();
