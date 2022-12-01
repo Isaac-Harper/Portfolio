@@ -157,7 +157,7 @@
     }
 
 .container {
-    margin: var(--vu-4);
+    padding: var(--vu-4);
     display: flex;
     flex-direction: column;
     align-items: center;
