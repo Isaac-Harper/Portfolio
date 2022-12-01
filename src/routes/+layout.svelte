@@ -133,7 +133,7 @@
 }
 
 :global(body) {
-    background-color: var(--background-color);
+    background-color: var(--black);
     font-family: var(--normal-font);
 }
 
@@ -161,5 +161,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--background-color);
 }
 </style>
