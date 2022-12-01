@@ -29,6 +29,7 @@
 	<title>{title}</title>
 	<meta name="title" content={title} />
 	<meta name="description" content={description} />
+	<meta name="theme-color" content="#1e190c"/>
 </svelte:head>
 
 
@@ -133,7 +134,7 @@
 }
 
 :global(body) {
-    background-color: var(--black);
+    background-color: var(--background-color);
     font-family: var(--normal-font);
 }
 
@@ -161,6 +162,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--background-color);
+  
 }
 </style>
