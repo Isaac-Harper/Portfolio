@@ -13,15 +13,15 @@ export async function load() {
             slug: "juno",
       	}, {
             title: "Walls are going up on the trailer",
-            intro: "",
+            intro: "After months of designing and working on smaller projects we have now finished the steel skeleton of the trailer. We solved many problems along the way and the trailer is better for it. ",
             slug: "trailer-2",
       	}, {
             title: "The construction and function of Vibia’s Market",
-            intro: "",
+            intro: "A much more complicated app than I initially set out to make Vibia's Market aims to make shopping in any TTRPG a smoother and faster experience. Here I document the process of designing and developing the app.",
             slug: "vibias",
       	}, {
             title: "Conservation takes many forms",
-            intro: "",
+            intro: "Working outdoors and doing projects that directly helped my local community during my time with Arizona Conservation Corps has permanently changed my outlook on service and what kind of work is important.",
             slug: "conservation",
       	},
         
