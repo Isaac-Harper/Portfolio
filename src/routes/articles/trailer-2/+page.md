@@ -1,6 +1,6 @@
 ---
-title: First look at a 1962 pacer trailer
-date: "2022-08-27"
+title: Walls are going up on the trailer
+date: "2022-11-29"
 ---
 
 
