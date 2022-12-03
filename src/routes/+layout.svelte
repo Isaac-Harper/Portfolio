@@ -19,8 +19,8 @@
 	    })
 	}
 	
-	const title = "Isaac's Portfolio"
-	const description = "Portfolio written in SvelteKit and hosted on Vercel"
+	const title = "Isaac Harper • Web App Developer • Portfolio"
+	const description = "Isaac Harper's portfolio written in SvelteKit and hosted on Vercel, "
 
 </script>
 
@@ -29,6 +29,7 @@
 	<title>{title}</title>
 	<meta name="title" content={title} />
 	<meta name="description" content={description} />
+	<meta name="theme-color" content="#1e190c"/>
     <link rel="stylesheet" href="/reset.css">
 </svelte:head>
 
@@ -54,14 +55,14 @@
 
 :root {
     /* Colors defined */
-        --black-h: 0;
-        --black-s: 0%;
-        --black-l: 0%;
+        --black-h: 43;
+        --black-s: 43%;
+        --black-l: 8%;
         --black: hsl(var(--black-h), var(--black-s), var(--black-l));
 
-        --white-h: 90;
-        --white-s: 29%;
-        --white-l: 97%;
+        --white-h: 46;
+        --white-s: 28%;
+        --white-l: 85%;
         --white: hsl(var(--white-h), var(--white-s), var(--white-l));
 
         --red-h: 0;
@@ -79,9 +80,9 @@
         --blue-l: 40%;
         --blue: hsl(var(--blue-h), var(--blue-s), var(--blue-l));
 
-        --green-h: 156;
-        --green-s: 23%;
-        --green-l: 34%;
+        --green-h: 72;
+        --green-s: 85%;
+        --green-l:  19%;
         --green: hsl(var(--green-h), var(--green-s), var(--green-l));
 
         /* Color uses defined */
@@ -158,7 +159,7 @@
     }
 
 .container {
-    margin: var(--vu-4);
+    padding: var(--vu-4);
     display: flex;
     flex-direction: column;
     align-items: center;
