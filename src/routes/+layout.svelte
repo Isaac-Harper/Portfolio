@@ -29,6 +29,7 @@
 	<title>{title}</title>
 	<meta name="title" content={title} />
 	<meta name="description" content={description} />
+    <link rel="stylesheet" href="/reset.css">
 </svelte:head>
 
 
