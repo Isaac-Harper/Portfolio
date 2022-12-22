@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 import Navlink from '$lib/elements/Navlink.svelte';
 import {
     page
 } from '$app/stores';
 
-let width
+let width: any
 </script>
 
 <svelte:window bind:innerWidth={width}/>
@@ -34,6 +34,7 @@ let width
 
 .container {
     background-color: var(--black);
+    position: sticky; top:0;
 
     position: sticky;
 	top:0;
