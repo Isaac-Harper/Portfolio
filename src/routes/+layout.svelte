@@ -41,37 +41,6 @@
 </div>
 
 <style>
-:global(*) {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-:global(body) {
-    background-color: var(--background-color);
-    font-family: var(--normal-font);
-}
-
-/* Text element default styling */
-    :global(h1) {
-        font-variation-settings: var(--wght-bold);
-        margin: 0 0 var(--vu-1) 0;
-        font-size: var(--font-mega);
-    }
-
-    :global(h2) {
-        font-variation-settings: var(--wght-bold);
-        font-size: var(--font-subtitle);
-        margin: 0 0 var(--vu-1);
-    }
-
-    :global(p) {
-        font-variation-settings: var(--wght-normal);
-        font-size: var(--font-text);
-        margin: 0 0 var(--vu-2);
-    }
 
 .container {
     padding: var(--vu-4);
