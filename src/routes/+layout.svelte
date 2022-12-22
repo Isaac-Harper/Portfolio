@@ -7,7 +7,7 @@
 
     import { inject } from '@vercel/analytics';
     
-    import 'reset.css';
+    import '/reset.css';
 
     inject()
 
