@@ -6,6 +6,8 @@
   	import { page } from '$app/stores';
 
     import { inject } from '@vercel/analytics';
+    
+    import 'reset.css';
 
     inject()
 
