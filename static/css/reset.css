@@ -55,7 +55,7 @@
         --slnt: "slnt" -0;
         --crsv: "CRSV" 0.5;
 
-        font-variation-settings: var(--mono), var(--casl), var(--wght-normal), var(--slnt), var(--crsv);
+        
 
 
     /* Font sizes defined | 12-20 grow at 1.333 scale*/
@@ -81,7 +81,6 @@
 @font-face {
     font-family: Recursive;
     src: url('/fonts/Recursive_VF_1.084.woff2');
-    font-display: swap;
 }
 
 * {
@@ -95,6 +94,7 @@
 html, body {
     background-color: var(--background-color);
     font-family: var(--normal-font);
+    font-variation-settings: var(--mono), var(--casl), var(--wght-normal), var(--slnt), var(--crsv);
 }
 
 /* Text element default styling */
