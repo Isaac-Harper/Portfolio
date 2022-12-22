@@ -6,8 +6,6 @@
   	import { page } from '$app/stores';
 
     import { inject } from '@vercel/analytics';
-    
-    import '/css/reset.css';
 
     inject()
 
@@ -32,7 +30,7 @@
 	<meta name="title" content={title} />
 	<meta name="description" content={description} />
 	<meta name="theme-color" content="#1e190c"/>
-    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/css/reset.css">
 </svelte:head>
 
 
