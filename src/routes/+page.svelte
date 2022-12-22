@@ -22,6 +22,7 @@
         <h2 class="highlight">About Me</h2>
         <img src={portrait} alt="Portait" class="img"/>
         <p>I'm <span title="(He/Him/They)" class="highlight">Isaac</span>. I am a <span class="highlight" title={string}>22</span> year old developer originally from Arizona. I'm interested in many things including web development, hobby electronics, worldbuilding, CAD, coffee brewing, video games, backpacking, and fishing. </p>
+        <p>I'm Isaac. I am a <span class="highlight" title={string}>23</span> year old developer originally from Arizona. I'm interested in many things including web development, hobby electronics, worldbuilding, CAD, coffee brewing, video games, backpacking, and fishing. </p>
 
         <p>Take a look around to see the new projects I've been working on. Also feel free to get in touch at <a href="mailto:isaacharperdev@gmail.com" class="highlight">IsaacHarperDev@gmail.com</a></p>
 

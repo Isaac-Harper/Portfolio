@@ -35,6 +35,9 @@ let width: any
 .container {
     background-color: var(--black);
     position: sticky; top:0;
+
+    position: sticky;
+	top:0;
     display: flex;
     justify-content: center;
     z-index: 10;
