@@ -1,5 +1,5 @@
 ---
-title: First look at a 1962 pacer trailer
+title: First look at our 1962 pacer trailer
 date: "2022-05-02"
 ---
 
