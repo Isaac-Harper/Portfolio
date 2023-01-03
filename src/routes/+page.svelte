@@ -16,16 +16,20 @@
 
 <Page>
     <svelte:fragment  slot="title">Isaac Harper</svelte:fragment>
-    <svelte:fragment  slot="intro">My homebase on the internet. A growing collection of projects I'm working on and anything I think is valuable enough to write down.</svelte:fragment>
+    <svelte:fragment  slot="intro">On this site, you'll find a collection of my most recent projects, as well as any valuable insights and thoughts I've written down. I'm always working on something new, so be sure to check back often to see what I've been up to.
+
+</svelte:fragment>
 
     <svelte:fragment slot="contents">
         <h2 class="highlight">About Me</h2>
         <img src={portrait} alt="Portait" class="img"/>
-        <p>I'm Isaac. I am a <span class="highlight" title={string}>23</span> year old developer originally from Arizona. I'm interested in many things including web development, hobby electronics, worldbuilding, CAD, coffee brewing, video games, backpacking, and fishing. </p>
+        
+        <p>I am a software developer with a passion for creating functional and visually appealing websites.</p>
+        
+        <p>In addition to my love for coding, I am also an avid fan of a variety of hobbies including electronics, worldbuilding, CAD, coffee brewing, video games, backpacking, and fishing. These diverse interests allow me to bring a unique perspective and creative flair to my work.</p>
+        
+        <p>Thank you for visiting my portfolio website. I hope you enjoy exploring my projects and learning more about me. If you have any questions or would like to collaborate, don't hesitate to reach out to me at <a href="mailto:isaacharperdev@gmail.com" class="highlight">IsaacHarperDev@gmail.com</a>. You can also check out the source code for this website on my <a class="highlight" href="https://github.com/Voldari/Portfolio">Github</a> page.</p>
 
-        <p>Take a look around to see the new projects I've been working on. Also feel free to get in touch at <a href="mailto:isaacharperdev@gmail.com" class="highlight">IsaacHarperDev@gmail.com</a></p>
-
-        <p>Take a look at the source for this site at <a class="highlight" href="https://github.com/Voldari/Portfolio">Github</a></p>
     </svelte:fragment>
 </Page>
 
