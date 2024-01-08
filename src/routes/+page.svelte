@@ -21,41 +21,27 @@
 	</svelte:fragment>
 
 	<svelte:fragment slot="contents">
-		<h2 class="highlight">About Me</h2>
-		<img src={portrait} alt="Portait" class="img" />
+		<h2 class="text-accent rtext-2xl mb-4">About Me</h2>
+		<img src={portrait} alt="Portait" class="w-full rounded-3xl border-2 border-black mb-4" />
 
-		<p>
+		<p class="mb-4">
 			I am a software developer with a passion for creating functional and visually appealing
 			websites.
 		</p>
 
-		<p>
+		<p class="mb-4">
 			In addition to my love for coding, I am also an avid fan of a variety of hobbies including
 			electronics, worldbuilding, CAD, coffee brewing, video games, backpacking, and fishing. These
 			diverse interests allow me to bring a unique perspective and creative flair to my work.
 		</p>
 
-		<p>
+		<p class="mb-4">
 			Thank you for visiting my portfolio website. I hope you enjoy exploring my projects and
 			learning more about me. If you have any questions or would like to collaborate, don't hesitate
-			to reach out to me at <a href="mailto:isaacharperdev@gmail.com" class="highlight"
+			to reach out to me at <a class="text-amber-500" href="mailto:isaacharperdev@gmail.com"
 				>IsaacHarperDev@gmail.com</a
 			>. You can also check out the source code for this website on my
-			<a class="highlight" href="https://github.com/Voldari/Portfolio">Github</a> page.
+			<a class="text-amber-500" href="https://github.com/Voldari/Portfolio">Github</a> page.
 		</p>
 	</svelte:fragment>
 </Page>
-
-<style>
-	.highlight {
-		color: var(--font-color-highlight);
-		text-decoration: none;
-	}
-
-	img {
-		max-width: 100%;
-		border-radius: var(--vu-4);
-		margin-bottom: var(--vu-1);
-		border: solid black;
-	}
-</style>

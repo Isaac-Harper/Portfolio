@@ -5,34 +5,10 @@
 	let href;
 </script>
 
-<a {href}>
-	<slot name="image" class="image">img</slot>
+<a {href} class="flex text-black border-2 border-black rounded-3xl p-2 px-4 z-10">
+	<slot name="image" class="block w-full h-auto">img</slot>
 
-	<p>
+	<p class="pl-4 m-auto text-lg">
 		<slot name="tagName">tag</slot>
 	</p>
 </a>
-
-<style>
-	a {
-		display: flex;
-
-		color: black;
-		text-decoration: none;
-
-		z-index: 1;
-		border: solid black;
-		border-radius: 2rem;
-		padding: 1rem;
-	}
-
-	.image {
-		color: black;
-	}
-
-	p {
-		padding-left: 1rem;
-		margin: auto;
-		font-size: var(--font-tiny);
-	}
-</style>

@@ -23,7 +23,10 @@
 	<span slot="title">Projects</span>
 	<span slot="intro">Here are some of the things that I've been working on</span>
 
-	<div slot="contents" class="project-grid">
+	<div
+		slot="contents"
+		class="flex flex-nowrap flex-col justify-start items-start content-start gap-8"
+	>
 		<UniCard>
 			<svelte:fragment slot="title">Vibia's Market</svelte:fragment>
 			<Icon slot="subtitle" link="https://github.com/Voldari/vibias-market" img={gh} />
@@ -99,17 +102,3 @@
 		</UniCard>
 	</div>
 </Page>
-
-<style>
-	.project-grid {
-		height: 100%;
-		display: flex;
-		flex-wrap: nowrap;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-		align-content: flex-start;
-
-		gap: var(--spacing-small);
-	}
-</style>

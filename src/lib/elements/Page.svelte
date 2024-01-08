@@ -1,32 +1,12 @@
-
-    <div class="body">
-        <h1>
-            <slot name="title">Title</slot>
-        </h1>
-        <p class="intro">
-            <slot name="intro">Intro</slot>
-        </p>
-        <hr>
-        <div class="contents">
-            <slot name="contents">content</slot>
-        </div>    
-    </div>
-    
-    <style>
-        .body {
-            max-width: 70rem;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            line-height: 1.3;
-            
-            color: var(--font-color);
-            font-size: var(--font-text);
-            font-family: var(--normal-font);
-        }
-
-        .contents {
-            margin: var(--vu-4);
-        }
-    </style>
-    
+<div class="max-w-[80ch] w-full flex flex-col ">
+	<h1 class="text-3xl font-bold mb-4">
+		<slot name="title">Title</slot>
+	</h1>
+	<p class="mb-4 ">
+		<slot name="intro">Intro</slot>
+	</p>
+	<hr class="mb-4" />
+	<div class="mb-4">
+		<slot name="contents">content</slot>
+	</div>
+</div>

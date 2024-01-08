@@ -1,37 +1,27 @@
-<!---
-    Variables:
-        --color
-        --active-color
-        
-        --box-height
---->
 <script>
 	export let selected = false;
 
 	export let link = '/';
 </script>
 
-<a href={link} class="button" class:selected>
-	<div class="box" />
+<a
+	href={link}
+	class="button text-xl text-neutral-content hover:text-neutral-content hover:no-underline	"
+	class:selected
+>
+	<div class="box bg-accent" />
 	<slot>button</slot>
 </a>
 
 <style>
 	slot {
-		z-index: 2;
+		z-index: 20;
 	}
 
 	.button {
 		--box-height: 80%;
 		--box-width: 110%;
-		--color: hsl(var(--h, 245), var(--s, 91%), calc(var(--l, 88%) * 0.9));
 
-		height: var(--font-subtitle);
-		font-size: var(--font-subtitle);
-		font-family: var(--normal-font);
-		text-decoration: none;
-		color: var(--font-color);
-		border: none;
 		position: relative;
 		line-height: 1;
 	}
@@ -56,14 +46,7 @@
 		--box-width: 115%;
 	}
 
-	a {
-		color: var(--font-color);
-		text-decoration: none;
-	}
-
 	.box {
-		background-color: var(--color);
-
 		position: absolute;
 		left: 50%;
 		bottom: -10%;

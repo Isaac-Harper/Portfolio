@@ -1,30 +1,21 @@
-<script>
-</script>
-
-<div class="box">
-	<div class="flex">
-		<h2>
+<div class="p-8 w-full relative box">
+	<div class="flex gap-4 flex-wrap">
+		<h2 class="flex-grow z-10">
 			<slot name="title">Title</slot>
 		</h2>
-		<div class="subtitle">
+		<div class="subtitle z-10">
 			<slot name="subtitle" />
 		</div>
 	</div>
-	<p>
+	<p class="mb-4">
 		<slot name="summary">summary</slot>
 	</p>
-	<div class="flex">
+	<div class="flex gap-4">
 		<slot name="footer" />
 	</div>
 </div>
 
 <style>
-	.box {
-		width: 100%;
-		position: relative;
-		padding: var(--vu-2);
-	}
-
 	.box::before {
 		content: '';
 		position: absolute;
@@ -55,20 +46,5 @@
 
 	.box:hover::after {
 		top: 80%;
-	}
-
-	h2 {
-		flex-grow: 1;
-		z-index: 1;
-	}
-
-	.flex {
-		display: flex;
-		gap: var(--vu-2);
-		flex-wrap: wrap;
-	}
-
-	.subtitle {
-		z-index: 1;
 	}
 </style>
