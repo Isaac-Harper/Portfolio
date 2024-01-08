@@ -5,7 +5,6 @@
 	<p class="mb-4 ">
 		<slot name="intro">Intro</slot>
 	</p>
-	<hr class="mb-4" />
 	<div class="mb-4">
 		<slot name="contents">content</slot>
 	</div>

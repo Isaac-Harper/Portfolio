@@ -10,7 +10,7 @@
 	<p class="mb-4">
 		<slot name="summary">summary</slot>
 	</p>
-	<div class="flex gap-4">
+	<div class="flex gap-4 overflow-auto">
 		<slot name="footer" />
 	</div>
 </div>
